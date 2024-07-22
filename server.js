@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv').config();
 const app = express();
 const admin = require("firebase-admin");
-const serviceAccount = require('./fcard-3e435-firebase-adminsdk-ilp5b-940cd69429.json');
+const serviceAccount = require('./fcard-3e435-firebase-adminsdk-ilp5b-adfcbd2c7e.json');
 
 //init firebase
 admin.initializeApp({
