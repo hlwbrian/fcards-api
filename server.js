@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv').config();
 const app = express();
 const admin = require("firebase-admin");
-const serviceAccount = require('./fcard-3e435-firebase-adminsdk-ilp5b-adfcbd2c7e.json');
+const serviceAccount = require('./fcard-3e435-firebase-adminsdk-ilp5b-6e82f78499.json');
 
 //init firebase
 admin.initializeApp({
@@ -40,6 +40,6 @@ const firebase = require('./routes/firebase');
 /* INCLUDES all the routes */
 app.use('/fb/', firebase);
 
-app.listen(process.env.PORT || 80, () => {
+app.listen(3085, () => {
     console.log('Server running on port 3085');
 });
